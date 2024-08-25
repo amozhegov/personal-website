@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #ccc;
+  height: 100vh;
+  
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+li {
+  font-weight: 600;
+}
+
+.image-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-picture {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #621e8d;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
