@@ -1,6 +1,7 @@
 /* styles.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Georgia, sans-serif;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -61,7 +62,8 @@ li {
   height: 50vh;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid #621e8d;
+  /*border: 5px solid #621e8d;*/
+  border: 5 px solid #ffffff;
 }
 
 a {
