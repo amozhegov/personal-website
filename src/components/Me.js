@@ -8,12 +8,6 @@ import backgroundVideo from '../5818973-hd_1920_1080_24fps.mp4'; // Import the v
 const Me = () => {
   return (
     <section id="contact">
-      {/* Video Background */}
-      <video autoPlay muted loop className='background-video'>
-        <source src={backgroundVideo} type='video/mp4' />
-        Your browser does not support the video tag.
-      </video>
-
       {/* Content Section */}
       <div className='content'>
         <div className='image-container'>

@@ -1,109 +1,76 @@
 /* styles.css */
-body {
-  font-family: Georgia, sans-serif;
-  color: #ffffff;
+body, html {
   margin: 0;
   padding: 0;
-}
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 1rem;
-}
-
-section {
-  padding: 2rem;
-  border-bottom: 1px solid #ccc;
-  height: 100vh;
-  
-}
-
-h2 {
-  margin-top: 0;
-}
-
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.project {
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
-  border: 1px solid #ccc;
-}
-
-li {
-  font-weight: 600;
-}
-
-.image-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.profile-picture {
-  width: 50vh;
-  height: 50vh;
-  border-radius: 50%;
-  object-fit: cover;
-  /*border: 5px solid #621e8d;*/
-  border: 5 px solid #ffffff;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-
-
-
-/* Ensure your video fills the background */
-.background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  font-family: Georgia, serif;
+  color: white;
 }
 
-/* Style the content to be visible on top of the video */
-.content {
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+}
+
+#video-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
   position: relative;
   z-index: 1;
-  color: white; /* Adjust text color for visibility */
+}
+
+.navbar button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #555;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  text-align: center;
   padding: 20px;
 }
 
-.image-container {
-  text-align: center;
-}
-
 .profile-picture {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Make it the same as width to create a circle */
+  border-radius: 50%; /* This makes the image circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  border: 2px solid #333; /* Optional: Adds a border around the image */
 }
 
-#contact a {
-  color: white; /* Ensure links are visible */
+
+a {
+  color: white;
   text-decoration: none;
 }
