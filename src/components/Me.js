@@ -1,7 +1,7 @@
 import React from 'react';
 import profilePicture from '../me.jpg';
-import { FaEnvelope, FaInstagram, FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
-import { IoLanguage } from 'react-icons/io5';
+import { FaUser, FaEnvelope, FaInstagram, FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
+import { IoLanguage,  } from 'react-icons/io5';
 import '../styles.css'; 
 import PDF from '../amozhegov_CV.pdf';
 
@@ -19,7 +19,7 @@ const Me = () => {
         <p><FaEnvelope /> <a href='mailto:amozhegov@yahoo.com'>amozhegov@yahoo.com</a></p>
         <p><FaInstagram /> <a href='https://www.instagram.com/artemmozhegov/'>artemmozhegov</a></p>
         <p><FaGithub /> <a href='https://github.com/amozhegov'>artemmozhegov</a></p>
-        <p> <a href={PDF}>My CV</a></p>
+        <p><FaUser /> <a href={PDF}>My CV</a></p>
       </div>
     </section>
   );
