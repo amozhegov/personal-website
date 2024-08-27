@@ -47,7 +47,8 @@ body, html {
 }
 
 .navbar button:hover {
-  background-color: #555;
+  background-color: #ffffff;
+  
 }
 
 .content-container {

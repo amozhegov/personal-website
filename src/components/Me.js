@@ -3,7 +3,7 @@ import profilePicture from '../me.jpg';
 import { FaEnvelope, FaInstagram, FaGithub, FaMapMarkerAlt } from 'react-icons/fa';
 import { IoLanguage } from 'react-icons/io5';
 import '../styles.css'; 
-import backgroundVideo from '../5818973-hd_1920_1080_24fps.mp4'; // Import the video
+import PDF from '../amozhegov_CV.pdf';
 
 const Me = () => {
   return (
@@ -19,6 +19,7 @@ const Me = () => {
         <p><FaEnvelope /> <a href='mailto:amozhegov@yahoo.com'>amozhegov@yahoo.com</a></p>
         <p><FaInstagram /> <a href='https://www.instagram.com/artemmozhegov/'>artemmozhegov</a></p>
         <p><FaGithub /> <a href='https://github.com/amozhegov'>artemmozhegov</a></p>
+        <p> <a href={PDF}>My CV</a></p>
       </div>
     </section>
   );
